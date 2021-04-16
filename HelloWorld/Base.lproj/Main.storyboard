@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,24 +13,47 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HelloWorld" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hello World" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CgN-Nu-OY7">
-                                <rect key="frame" x="186" y="130" width="88" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="daV-BH-Zgk" userLabel="TOP">
+                                <rect key="frame" x="20" y="144" width="388" height="150"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="Rb1-Zu-hGK"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yax-4L-yNx" userLabel="LEFT">
+                                <rect key="frame" x="20" y="314" width="50" height="528"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="FMk-Rk-JwF"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t00-Sv-Zvp" userLabel="RIGHT">
+                                <rect key="frame" x="90" y="314" width="318" height="528"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="yax-4L-yNx" firstAttribute="top" secondItem="daV-BH-Zgk" secondAttribute="bottom" constant="20" id="4hV-7a-bfs"/>
+                            <constraint firstItem="t00-Sv-Zvp" firstAttribute="leading" secondItem="yax-4L-yNx" secondAttribute="trailing" constant="20" id="9TQ-Nj-d49"/>
+                            <constraint firstItem="t00-Sv-Zvp" firstAttribute="top" secondItem="yax-4L-yNx" secondAttribute="top" id="EJV-qI-6Aw"/>
+                            <constraint firstItem="daV-BH-Zgk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="O4i-BL-Ok9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="daV-BH-Zgk" secondAttribute="trailing" constant="20" id="crr-ds-ncY"/>
+                            <constraint firstItem="daV-BH-Zgk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="gsz-29-nwK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="yax-4L-yNx" secondAttribute="bottom" constant="50" id="lwC-fO-lin"/>
+                            <constraint firstItem="t00-Sv-Zvp" firstAttribute="bottom" secondItem="yax-4L-yNx" secondAttribute="bottom" id="oI1-C5-sll"/>
+                            <constraint firstItem="t00-Sv-Zvp" firstAttribute="trailing" secondItem="daV-BH-Zgk" secondAttribute="trailing" id="qnN-c1-rFO"/>
+                            <constraint firstItem="yax-4L-yNx" firstAttribute="leading" secondItem="daV-BH-Zgk" secondAttribute="leading" id="xlH-lh-Iy1"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="18.840579710144929" y="93.75"/>
+            <point key="canvasLocation" x="18.22429906542056" y="92.656587473002162"/>
         </scene>
     </scenes>
     <resources>
